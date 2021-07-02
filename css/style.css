@@ -9,8 +9,8 @@ body{
     vertical-align: middle;
     justify-content: center;
 }
-.topbar-right ul {
-    display: table;
+.topbar-right {
+    display: block;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -55,7 +55,7 @@ body{
 
 .topbar-right {
     float: none;
-    display: table;
+    display: block;
     width: 100%;
 }
 .topbar-left img {
@@ -123,6 +123,10 @@ section.mainheader {
     font-size: 14px;
     cursor: pointer;
     overflow: hidden;
+}
+/* Mobile Menu */
+#menu{
+    display: none;
 }
 
 /* Header slider css */
@@ -388,29 +392,20 @@ section.doctorteam {
     text-align: center;
     transform: scale(.7);
 }
-.mdoctorlist ul {
-    list-style: none;
-    text-align: center;
-    display: flex;
-    margin: auto;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-}
 
 .mdoctortitle {
     padding: 15px 0px;
 }
-.mdoctorlist ul li img {
+.mdoctorlist img {
     width: 100%;
 }
-.mdoctorlist ul li {
-    margin-right: 20px;
+.mdoctorinner {
     background-color: #fff;
     border-bottom: 3px solid #00CCE1;
     transition: .5s all;
+    cursor: pointer;
 }
-.mdoctorlist ul li h4 {
+.mdoctorlist h4 {
     font-size: 18px;
     margin-bottom: 0;
     transition: .5s all;
@@ -419,16 +414,17 @@ section.doctorteam {
     margin: 0;
     padding: 0;
 }
-.mdoctorlist ul li:hover h4{
+
+.mdoctorinner:hover h4{
     color: #F69165;
     
 }   
-.mdoctorlist ul li:hover .hover-icons{
+.mdoctorinner:hover .hover-icons{
     border-color: #F69165;
     opacity: 1;
     transform: perspective(400px) rotateX(0deg);
 }
-.mdoctorlist ul li:hover{
+.mdoctorinner:hover{
     border-bottom: 3px solid #F69165;
 }
 .mdoctorinner {
@@ -496,14 +492,8 @@ section.our_service {
     vertical-align: middle;
 }
 
-.serviceboxconten ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-}
-.serviceboxconten ul li {
+
+.servicebox {
     width: 300px;
     margin-right: 20px;
     padding: 25px;
@@ -522,23 +512,23 @@ section.our_service {
     margin-top: 10px;
     font-size: 13px;
 }
-.serviceboxconten ul li:hover {
+.servicebox:hover {
     border: 3px solid #F69165;
 }
-.serviceboxconten ul li:hover  h3 {
+.servicebox:hover  h3 {
     color: #f69165;
 }
-.serviceboxconten ul li strong {
+.servicebox strong {
     transition: all 0.5s ease 0s;
 }
-.serviceboxconten ul li i {
+.servicebox i {
     transition: all 0.5s ease 0s;
 }
-.serviceboxconten ul li:hover  strong {
+.servicebox:hover  strong {
     color: #f69165;
     transition: all 0.5s ease 0s;
 }
-.serviceboxconten ul li:hover  i {
+.servicebox:hover  i {
     color: #f69165;
     transition: all 0.5s ease 0s;
 }
